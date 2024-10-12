@@ -6,7 +6,7 @@ require "init.php";
 // Database connection object (from init.php (DatabaseConnection))
 global $conn;
 
-try {
+//try {
 
     // Create Router instance
     $router = new \Bramus\Router\Router();
@@ -22,10 +22,10 @@ try {
     // Run it!
     $router->run();
 
-} catch (Exception $e) {
+// } catch (Exception $e) {
 
-    echo json_encode([
-        'error' => $e->getMessage()
-    ]);
+//     echo json_encode([
+//         'error' => $e->getMessage()
+//     ]);
 
-}
+// }
